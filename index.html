@@ -9,50 +9,68 @@
   <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Floating Hearts Animation -->
-  <div class="floating-hearts"></div>
+  <!-- Background GIF -->
+  <div class="background-gif"></div>
 
-  <!-- Slideshow Section -->
-  <header class="slideshow">
-    <div id="slideshow-container" class="slideshow-container">
-      <video class="slide" id="video1">
-        <source src="assets/video1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video class="slide" id="video2" style="display: none;">
-        <source src="assets/video2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video class="slide" id="video3" style="display: none;">
-        <source src="assets/video3.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-    </div>
+  <!-- Background Music -->
+  <audio id="bg-music" autoplay loop>
+    <source src="assets/Birthday_Song.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
+  <div class="music-controls">
+    <button onclick="toggleMusic()">🔈 Play/Pause Music</button>
+  </div>
+
+  <!-- Header Section -->
+  <header>
     <h1 class="banner-text">Happy Birthday Kashish! 💖</h1>
     <p class="banner-subtext">"This is your day to shine like the queen you are!"</p>
   </header>
 
-  <!-- Videos Section -->
-  <section id="videos" class="video-carousel">
-    <h2>🎥 Messages from Friends 🎥</h2>
-    <div class="video-slider">
-      <video controls>
-        <source src="assets/Ayush.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="assets/Diksha.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+
+  <!-- Birthday Wish Video Section -->
+  <section id="video-section" class="video-section">
+    <h2>🎥 A Special Birthday Wish 🎥</h2>
+    <video controls>
+      <source src="assets/Merged2.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Photo Gallery Section -->
+  <section id="photos" class="photo-gallery">
+    <h2>📸 Kashish's 20 Years of Life 📸</h2>
+    <div class="gallery-grid">
+      <!-- Add 18 photos -->
+      <img src="assets/k1.jpg" alt="Kashish Photo 1" class="portrait">
+      <img src="assets/k2.jpg" alt="Kashish Photo 2" class="portrait">
+      <img src="assets/k3.jpg" alt="Kashish Photo 3" class="portrait rotated">
+      <img src="assets/k4.jpg" alt="Kashish Photo 4" class="portrait">
+      <img src="assets/k5.jpg" alt="Kashish Photo 5" class="portrait rotated">
+      <img src="assets/k6.jpg" alt="Kashish Photo 6" class="portrait">
+      <img src="assets/k7.jpg" alt="Kashish Photo 7" class="portrait">
+      <img src="assets/k8.jpg" alt="Kashish Photo 8" class="portrait">
+      <img src="assets/k9.jpg" alt="Kashish Photo 9" class="portrait">
+      <img src="assets/k10.jpg" alt="Kashish Photo 10" class="portrait">
+      <img src="assets/k11.jpg" alt="Kashish Photo 11" class="portrait">
+      <img src="assets/k12.jpg" alt="Kashish Photo 12" class="portrait">
+      <img src="assets/k13.jpg" alt="Kashish Photo 13" class="portrait">
+      <img src="assets/k14.jpg" alt="Kashish Photo 14" class="portrait">
+      <img src="assets/k15.jpg" alt="Kashish Photo 15" class="portrait">
+      <img src="assets/k16.jpg" alt="Kashish Photo 16" class="portrait">
+      <img src="assets/k17.jpg" alt="Kashish Photo 17" class="portrait">
+      <img src="assets/k18.jpg" alt="Kashish Photo 18" class="portrait">
     </div>
   </section>
 
-  <!-- Photos Section -->
-  <section id="photos" class="photo-gallery">
-    <h2>📸 Photo Memories 📸</h2>
-    <div class="gallery-grid">
-      <img src="assets/photo1.jpg" alt="Kashish 1">
-      <img src="assets/photo2.jpg" alt="Kashish 2">
+  <!-- Wishes Wall -->
+  <section id="wishes-wall" class="wishes-wall">
+    <h2>💌 Wishes Wall 💌</h2>
+    <textarea placeholder="Write a message for Kashish..." rows="4"></textarea>
+    <button>Post Wish</button>
+    <div class="wishes">
+      <p>🎉 "Happy Birthday Kashish! Keep shining like a star!" - Ayush</p>
+      <p>🎉 "Wishing you all the happiness in the world!" - Roomie</p>
     </div>
   </section>
 
@@ -62,6 +80,7 @@
     <p>Made with 💖 by your friends.</p>
   </footer>
 
+  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>
